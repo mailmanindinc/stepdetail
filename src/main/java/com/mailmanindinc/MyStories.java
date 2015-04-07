@@ -65,7 +65,7 @@ public class MyStories extends JUnitStories {
             .useStoryReporterBuilder(new StoryReporterBuilder()
                 .withCodeLocation(CodeLocations.codeLocationFromClass(embeddableClass))
                 .withDefaultFormats()
-                .withFormats(CONSOLE, TXT, CustomHtmlOutput.FORMAT, XML))
+                .withFormats(CONSOLE, TXT, HTML, XML))
             .useParameterConverters(parameterConverters);
     }
 
