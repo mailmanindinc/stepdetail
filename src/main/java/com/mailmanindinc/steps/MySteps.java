@@ -2,10 +2,9 @@ package com.mailmanindinc.steps;
 
 import org.hamcrest.Matchers;
 import org.jbehave.core.annotations.Given;
-import org.jbehave.core.annotations.Pending;
-import org.jbehave.core.annotations.Then;
-import org.jbehave.core.annotations.When;
 import org.jbehave.core.model.OutcomesTable;
+import org.jbehave.core.steps.AbstractStepResult.Failed;
+import org.jbehave.core.steps.AbstractStepResult.Successful;
 
 public class MySteps {
 	
@@ -21,7 +20,10 @@ public class MySteps {
 	    
 	    // Outcomes does not work positive case.
 	    // Write something here to write to report
-	    // successful("Test Outcome");
+	      // Get "reporter" for current thread using AOP
+	     //Successful.successful("Test Outcome").describeTo(reporter);
+	     // e is throwable
+	     //Failed.failed("Test Failed Outcome", e).describeTo(reporter);
 	    
 	}
     

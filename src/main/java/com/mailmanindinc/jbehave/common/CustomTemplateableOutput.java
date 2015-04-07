@@ -491,6 +491,7 @@ public class CustomTemplateableOutput implements StoryReporter {
         private String stepPattern;
         private String tableAsString;
         private ExamplesTable table;
+        private List<OutputStepDetail> stepdetails;
 
         public OutputStep(String step, String outcome) {
             this.step = step;
@@ -534,6 +535,14 @@ public class CustomTemplateableOutput implements StoryReporter {
         public OutcomesTable getOutcomes() {
             return outcomes;
         }
+        
+        public List<OutputStepDetail> getStepdetails() {
+			return stepdetails;
+		}
+
+		public void setStepdetails(List<OutputStepDetail> stepdetails) {
+			this.stepdetails = stepdetails;
+		}
 
         public String getOutcomesFailureCause() {
             if (outcomes.failureCause() != null) {
@@ -653,5 +662,17 @@ public class CustomTemplateableOutput implements StoryReporter {
         public String toString() {
             return parameter;
         }
+    }
+    
+    public static class OutputStepDetail {
+    	private ExamplesTable stepdetail;
+
+		public ExamplesTable getStepdetail() {
+			return stepdetail;
+		}
+
+		public void setStepdetail(ExamplesTable stepdetail) {
+			this.stepdetail = stepdetail;
+		}
     }
 }
