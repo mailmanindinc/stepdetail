@@ -16,7 +16,6 @@ import org.apache.commons.lang.StringUtils;
 import org.jbehave.core.configuration.Keywords;
 import org.jbehave.core.model.ExamplesTable;
 import org.jbehave.core.model.GivenStories;
-import org.jbehave.core.model.Lifecycle;
 import org.jbehave.core.model.Meta;
 import org.jbehave.core.model.Narrative;
 import org.jbehave.core.model.OutcomesTable;
@@ -655,10 +654,4 @@ public class CustomTemplateableOutput implements StoryReporter {
             return parameter;
         }
     }
-
-	@Override
-	public void lifecyle(Lifecycle arg0) {
-		// TODO Auto-generated method stub
-		
-	}
 }
