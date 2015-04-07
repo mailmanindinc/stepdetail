@@ -15,7 +15,7 @@ import org.jbehave.core.reporters.TemplateProcessor;
 public class CustomHtmlTemplateOutput extends CustomTemplateableOutput {
 
     public CustomHtmlTemplateOutput(File file, Keywords keywords) {
-        super(file, keywords, new FreemarkerProcessor(), "ftl/jbehave-html-output.ftl");
+        super(file, keywords, new FreemarkerProcessor(), "ftl/custom-html-output.ftl");
     }
 
     public CustomHtmlTemplateOutput(File file, Keywords keywords, TemplateProcessor processor, String templatePath) {
